@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="root/css/style.css">
     <title>Danish</title>
 </head>
 <body>
     <section>
-        <img src="bg.jpg" id="bg">
-        <img src="man.png" id="man">
-        <img src="clouds_1.png" id="clouds_1">
-        <img src="clouds_2.png" id="clouds_2">
-        <img src="left2.png" id="left">
-        <img src="rigth1.png" id="right">
+        <img src="root/img/bg.jpg" id="bg">
+        <img src="root/img/man.png" id="man">
+        <img src="root/img/clouds_1.png" id="clouds_1">
+        <img src="root/img/clouds_2.png" id="clouds_2">
+        <img src="root/img/left2.png" id="left">
+        <img src="root/img/rigth1.png" id="right">
         <h2 id="text">Transylvania</h2>
     </section>
     <div class="sec">
@@ -26,8 +26,36 @@
             Karpaterne passerer gennem 7 lande, men 51% er i Rumænien.
         </p>
     </div>
+    <div class="container-fluid">
+        <h2>Ofte stillede spørgsmål</h2>
+        <div class="accordion">
+            <div class="icon"></div>
+            <h5>Hvordan er vejret i Rumænien året rundt?</h5>
+        </div>
+        <div class="panel">
+            <p>Romania has a temperate-continental climate of a transitional type, specific to Central Europe. The mean temperature in the winter period falls below – 3°C and in the summertime it ranges between 22°C and 24°C. The mean annual temperature is 11°C in the south of the country and 8°C in the north of the country (1).</p>
+        </div>
+
+        <div class="accordion">
+            <div class="icon"></div>
+            <h5>Hvad er religionen i rumænien?</h5>
+        </div>
+        <div class="panel">
+            <p>Romania has a temperate-continental climate of a transitional type, specific to Central Europe. The mean temperature in the winter period falls below – 3°C and in the summertime it ranges between 22°C and 24°C. The mean annual temperature is 11°C in the south of the country and 8°C in the north of the country (1).</p>
+        </div>
+
+        <div class="accordion">
+            <div class="icon"></div>
+            <h5>Hvordan er vejret i Rumænien året rundt?</h5>
+        </div>
+        <div class="panel">
+            <p>Romania has a temperate-continental climate of a transitional type, specific to Central Europe. The mean temperature in the winter period falls below – 3°C and in the summertime it ranges between 22°C and 24°C. The mean annual temperature is 11°C in the south of the country and 8°C in the north of the country (1).</p>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="root/js/app.js"></script>
     <script>
         gsap.to("#bg", {
             scrollTrigger : {
@@ -69,6 +97,13 @@
                 scrub : 1
             },
             x : -200,
+        });
+
+        gsap.to("#text", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 200,
         });
     </script>
 </body>
