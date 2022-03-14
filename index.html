@@ -13,9 +13,10 @@
         <img src="root/img/man.png" id="man">
         <img src="root/img/clouds_1.png" id="clouds_1">
         <img src="root/img/clouds_2.png" id="clouds_2">
-        <img src="root/img/left2.png" id="left">
-        <img src="root/img/rigth1.png" id="right">
+        <img src="root/img/left2min.png" id="left">
+        <img src="root/img/rigth1min.png" id="right">
         <h2 id="text">Transylvania</h2>
+        <h2 id="text-mobile">Transylvania</h2>
     </section>
     <div class="sec">
         <h2>Om mit land</h2>
@@ -33,7 +34,15 @@
             <h5>Hvordan er vejret i Rumænien året rundt?</h5>
         </div>
         <div class="panel">
-            <p>Romania has a temperate-continental climate of a transitional type, specific to Central Europe. The mean temperature in the winter period falls below – 3°C and in the summertime it ranges between 22°C and 24°C. The mean annual temperature is 11°C in the south of the country and 8°C in the north of the country (1).</p>
+            <p>Rumænien har fire veldefinerede årstider: forår, sommer, efterår og vinter. Kold, snedækket vinter og varm, solrig sommer. Rumænien er et stort land med en kystregion ved Sortehavet, Donaudeltaet og bjerge. Derfor varierer klimaet afhængigt af regionen. Rumænien har et tempereret-kontinentalt klima af en overgangstype, specifik for Centraleuropa. Gennemsnitstemperaturen er</p>
+            <table style="width:100%">
+            <tr>
+                <th>Vinter: – 3°C</th>
+                <th>Forår: 11°C</th>
+                <th>Sommer: 23°C</th>
+                <th>Efterår: 12°C</th>
+            </tr>
+            </table>
         </div>
 
         <div class="accordion">
@@ -41,15 +50,52 @@
             <h5>Hvad er religionen i rumænien?</h5>
         </div>
         <div class="panel">
-            <p>Romania has a temperate-continental climate of a transitional type, specific to Central Europe. The mean temperature in the winter period falls below – 3°C and in the summertime it ranges between 22°C and 24°C. The mean annual temperature is 11°C in the south of the country and 8°C in the north of the country (1).</p>
+            <p>Vi har mange kirker, fordi størstedelen af befolkningen er religiøse. Vi lægger stor vægt på fejringen af jul. Rumænien er et meget religiøst land. Kristendommen er den største tro, hvor omkring 80 % af befolkningen identificerer sig som rumænsk-ortodokse kristne, 6 % identificerer sig som protestantiske kristne og 5 % identificerer sig som romersk-katolikker.</p>
+            <img class="moldoveanu" src="root/img/religion.jpg">
         </div>
 
         <div class="accordion">
             <div class="icon"></div>
-            <h5>Hvordan er vejret i Rumænien året rundt?</h5>
+            <h5>Hvilke lande er naboer med Rumænien?</h5>
         </div>
         <div class="panel">
-            <p>Romania has a temperate-continental climate of a transitional type, specific to Central Europe. The mean temperature in the winter period falls below – 3°C and in the summertime it ranges between 22°C and 24°C. The mean annual temperature is 11°C in the south of the country and 8°C in the north of the country (1).</p>
+            <p>Rumænien er afgrænset af Ukraine mod nord, Moldova mod nordøst, Sortehavet mod sydøst, Bulgarien mod syd, Serbien mod sydvest og Ungarn mod vest.</p>
+            <img class="map" src="root/img/map.jpg">
+        </div>
+
+        <div class="accordion">
+            <div class="icon"></div>
+            <h5>Hvad er den højeste top i Rumænien?</h5>
+        </div>
+        <div class="panel">
+            <p>Med sine 2.544 m er Moldoveanu Peak den højeste i Rumænien. Det er beliggende i Fagaras-bjergene i de sydlige Karpater.</p>
+            <img class="moldoveanu" src="root/img/moldoveanu.jpg">
+        </div>
+
+        <div class="accordion">
+            <div class="icon"></div>
+            <h5>Hvad er det laveste punkt i Rumænien?</h5>
+        </div>
+        <div class="panel">
+            <p>Punktet i Rumænien er Sortehavet eller 'Black Sea' på 0 meter havoverfladen. Sortehavet ligger mellem Europa og Asien.</p>
+            <img class="moldoveanu" src="root/img/black-sea.jpg">
+        </div>
+
+        <div class="accordion">
+            <div class="icon"></div>
+            <h5>Hvilke etniske grupper findes der i Rumænien?</h5>
+        </div>
+        <div class="panel">
+            <p>Omkring 90% af landets befolkning er etnisk rumænske. Der er også mange etniske ungarere, som hovedsageligt bor i Transsylvanien, i det nordvestlige område af landet. En lille procentdel af rumænske borgere identificerer sig selv som romaer (sigøjnere), og etniske tyskere udgør en endnu mindre del af befolkningen.</p>
+            <img class="moldoveanu" src="root/img/ethnic.jpg">
+        </div>
+
+        <div class="accordion">
+            <div class="icon"></div>
+            <h5>Hvad skal du vide om rumænsk politik?</h5>
+        </div>
+        <div class="panel">
+            <p>Regeringen er demokratisk. Rumænien har været medlem af EU siden 2007 og blev medlem af Den Nordatlantiske Traktatorganisation (NATO) i 2004.</p>
         </div>
     </div>
 
@@ -104,6 +150,13 @@
                 scrub : 1
             },
             y : 200,
+        });
+
+        gsap.to("#text-mobile", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            y : 140,
         });
     </script>
 </body>

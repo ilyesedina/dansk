@@ -42,10 +42,14 @@ section img#man{
 /* Text start */
 #text{
     position: relative;
+    display: flex;
     color: #fff;
     font-size: 10vw;
     margin-top: -130px;
     text-shadow: -2px -2px 0 #20496a, 2px -2px 0 #20496a, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+#text-mobile{
+    display: none;
 }
 .sec{
     position: relative;
@@ -64,7 +68,7 @@ section img#man{
 /* Text end */
 /* frequently asked questions start */
 .container-fluid{
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -128,8 +132,26 @@ section img#man{
     max-height: 0;
     transition: all .5s ease-in;
 }
+table, th, td {
+    font-size: 1em;
+    color: #20496a;
+  }
+.map{
+    max-width: 50%;
+}
+.moldoveanu{
+    max-width: 100%;
+}
 /* frequently asked questions end */
-
+@media only screen and (max-width: 1550px) {
+    .sec{
+        position: relative;
+        padding: 30px 50px;
+    }
+    .container-fluid{
+        width: 70%;
+    }
+}
 @media only screen and (max-width: 600px) {
     /* landing page start */
     section {
@@ -153,10 +175,29 @@ section img#man{
     section #text{
         margin-top: -20px;
     }
-  }
-@media only screen and (max-width: 1550px) {
-    .sec{
-        position: relative;
-        padding: 30px 50px;
+    .container-fluid{
+        width: 96%;
     }
-}
+    .accordion h5{
+        font-size: 17px;
+    }
+    section::before {
+        height: 170px;
+        bottom: -5px;
+    }
+    #text-mobile{
+        position: relative;
+        color: #fff;
+        font-size: 10vw;
+        margin-top: -50px;
+        display: flex;
+        text-shadow: -2px -2px 0 #20496a, 2px -2px 0 #20496a, -2px 2px 0 #000, 2px 2px 0 #000;
+    }
+    #text{
+        display: none;
+    }
+    .map{
+        max-width: 100%;
+    }
+  }
+
