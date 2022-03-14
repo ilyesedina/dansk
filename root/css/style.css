@@ -71,6 +71,7 @@ section img#man{
     width: 50%;
     margin: 0 auto;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .container-fluid h2{
     font-size: 1.5em;
@@ -143,6 +144,23 @@ table, th, td {
     max-width: 100%;
 }
 /* frequently asked questions end */
+/* parallax effect start*/
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/winter.jpg");
+  
+    /* Set a specific height */
+    min-height: 100px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* parallax effect end*/
 @media only screen and (max-width: 1550px) {
     .sec{
         position: relative;
