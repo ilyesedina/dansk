@@ -140,6 +140,12 @@ table, th, td {
 .map{
     max-width: 50%;
 }
+.food{
+    max-width: 24%;
+}
+a {
+    color: #20496a;
+}
 .moldoveanu{
     max-width: 100%;
 }
@@ -173,7 +179,7 @@ table, th, td {
 @media only screen and (max-width: 600px) {
     /* landing page start */
     section {
-        height: 45vh;
+        height: 55vh;
     }
     section img#man {
         transform-origin: bottom;
