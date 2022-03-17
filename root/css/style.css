@@ -51,6 +51,12 @@ section img#man{
 #text-mobile{
     display: none;
 }
+.film-mobile{
+    display: none;
+}
+.film-destop{
+    display: flex;
+}
 .sec{
     position: relative;
     padding: 30px 200px;
@@ -216,6 +222,12 @@ a {
         margin-top: -50px;
         display: flex;
         text-shadow: -2px -2px 0 #20496a, 2px -2px 0 #20496a, -2px 2px 0 #000, 2px 2px 0 #000;
+    }
+    .film-mobile{
+        display: flex;
+    }
+    .film-destop{
+        display: none;
     }
     #text{
         display: none;
