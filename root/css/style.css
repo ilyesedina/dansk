@@ -55,7 +55,13 @@ section img#man{
     display: none;
 }
 .film-destop{
-    display: flex;
+    display: table;
+}
+.food{
+    max-width: 49%;
+}
+.film-img{
+    max-width: 24%;
 }
 .sec{
     position: relative;
@@ -146,9 +152,6 @@ table, th, td {
 .map{
     max-width: 50%;
 }
-.food{
-    max-width: 49%;
-}
 a {
     color: #20496a;
 }
@@ -215,7 +218,7 @@ a {
         height: 170px;
         bottom: -5px;
     }
-    
+
     #text-mobile{
         position: relative;
         color: #fff;
@@ -229,6 +232,9 @@ a {
     }
     .film-destop{
         display: none;
+    }
+    .film-img{
+        max-width: 49%;
     }
     #text{
         display: none;
